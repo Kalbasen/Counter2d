@@ -74,11 +74,11 @@ public class EnemyBot : MonoBehaviour
         Vector2 direction = currentTarget - (Vector2)transform.position;
         if (direction.sqrMagnitude > 0.001f)
         {
-            rb.velocity = direction.normalized * speed;
+            rb.linearVelocity = direction.normalized * speed;
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
     }
 

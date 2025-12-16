@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Apply movement via Rigidbody2D velocity
         if (rb != null)
-            rb.velocity = direction * speed;
+            rb.linearVelocity = direction * speed;
     }
 
     void Update()
